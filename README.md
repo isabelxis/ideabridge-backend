@@ -1,3 +1,4 @@
+```mermaid
 flowchart TB
 
 %% =========================
@@ -44,8 +45,8 @@ CACHE[(Redis Cache)]
 %% =========================
 %% External / Future
 %% =========================
-AI[AI Validation Service<br/>(Future)]
-MSG[Notification / Chat<br/>WebSocket - Future]
+AI[AI Validation Service- Future]
+MSG[Notification / Chat WebSocket - Future]
 
 %% =========================
 %% Flow
@@ -62,5 +63,5 @@ SRV --> CACHE
 %% =========================
 %% Future connections
 %% =========================
-SRV -.-> AI
-SRV -.-> MSG
+SRV --> AI
+SRV --> MSG
