@@ -149,6 +149,8 @@ SRV --> DOM
 DOM --> REP
 REP --> DB
 SRV -->|Cache| CACHE
+SRV -->AI
+SRV -->MSG
 ```
 ## 📄 License
 ```bash
