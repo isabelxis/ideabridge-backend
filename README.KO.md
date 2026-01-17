@@ -125,6 +125,11 @@ REP[리포지토리 레이어<br/>Spring Data JPA]
 DB[(PostgreSQL)]
 CACHE[(Redis 캐시)]
 %% =========================
+%% 외부 시스템 / 향후
+%% =========================
+AI[AI 검증 서비스 - 향후]
+MSG[알림 / 채팅 WebSocket - 향후]
+%% =========================
 %% Flow
 %% =========================
 FE -->|HTTPS JSON| API
@@ -135,6 +140,8 @@ SRV --> DOM
 DOM --> REP
 REP --> DB
 SRV -->|캐시| CACHE
+SRV --> AI
+SRV --> MSG
 ```
 ## 📄 라이선스
 
