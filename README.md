@@ -1,67 +1,10 @@
-```mermaid
-flowchart TB
+## README Language Versions
 
-%% =========================
-%% Frontend
-%% =========================
-FE[Frontend<br/>Next.js / React / Mobile]
+- [English Version](./README.EN.md)
+- [한국어 버전](./README.KO.md)
 
-%% =========================
-%% API Layer
-%% =========================
-API[API Gateway<br/>Spring Boot REST]
+# 📱 Full-Stack Web Application with Next.js and Spring Boot
 
-%% =========================
-%% Security
-%% =========================
-SEC[Security Layer<br/>JWT • RBAC • OAuth2]
+This repository contains a full-stack web application built with Next.js for the frontend and Spring Boot for the backend. The application features user authentication, role-based access control, and a RESTful API architecture.
 
-%% =========================
-%% Controllers
-%% =========================
-CTRL[Controllers<br/>REST Endpoints]
-
-%% =========================
-%% Services
-%% =========================
-SRV[Service Layer<br/>Business Rules]
-
-%% =========================
-%% Domain
-%% =========================
-DOM[Domain Layer<br/>Entities & Logic]
-
-%% =========================
-%% Repository
-%% =========================
-REP[Repository Layer<br/>Spring Data JPA]
-
-%% =========================
-%% Databases
-%% =========================
-DB[(PostgreSQL)]
-CACHE[(Redis Cache)]
-
-%% =========================
-%% External / Future
-%% =========================
-AI[AI Validation Service- Future]
-MSG[Notification / Chat WebSocket - Future]
-
-%% =========================
-%% Flow
-%% =========================
-FE -->|HTTPS JSON| API
-API --> SEC
-SEC --> CTRL
-CTRL --> SRV
-SRV --> DOM
-DOM --> REP
-REP --> DB
-SRV --> CACHE
-
-%% =========================
-%% Future connections
-%% =========================
-SRV --> AI
-SRV --> MSG
+Frontend project: https://github.com/isabelxis/ideabridge-korea
